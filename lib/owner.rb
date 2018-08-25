@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
   #knows about all pets
   #can buy a pet
