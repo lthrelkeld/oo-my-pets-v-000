@@ -31,10 +31,8 @@ class Owner
     @@owners.clear
   end
 
-  def species
-  end
-
   def say_species
+    "I am #{species}."
   end
 
   def buy_fish
