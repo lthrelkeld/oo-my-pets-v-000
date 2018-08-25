@@ -1,9 +1,20 @@
 class Owner
-
+  #knows about all pets
+  #can buy a pet
+  #can set the name of a pet (which the pet cant change)
+  #can change a pets mood through walking, feeding, or playing with it
+  #can sell all of its pets
+  attr_accessor :name
+  
   @@owners = []
 
   def initialize(name)
     @@owners << self
+    @pets = {
+      dogs: []
+      cats: []
+      fish: []
+    }
   end
 
   def self.all
@@ -18,9 +29,13 @@ class Owner
     @@owners.clear
   end
 
-  #knows about all pets
-  #can buy a pet
-  #can set the name of a pet (which the pet cant change)
-  #can change a pets mood through walking, feeding, or playing with it
-  #can sell all of its pets
+  def species
+  end
+
+  def say_species
+  end
+
+  def
+
+
 end
