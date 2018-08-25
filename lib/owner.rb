@@ -2,8 +2,12 @@ class Owner
 
   @@owners = []
 
-  def all
+  def self.all
     @@owners
+  end
+
+  def self.reset_all
+    @@owners.clear
   end
 
   #knows about all pets
