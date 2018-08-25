@@ -5,11 +5,12 @@ class Owner
   #can change a pets mood through walking, feeding, or playing with it
   #can sell all of its pets
   attr_accessor :name, :pets
+  attr_reader :species
 
   @@owners = []
 
-  def initialize(name)
-    @name = name
+  def initialize(species)
+    @species = species
     @pets = {
       dogs: []
       cats: []
@@ -47,4 +48,3 @@ class Owner
 
 
 end
-
